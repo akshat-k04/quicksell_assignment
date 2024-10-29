@@ -1,0 +1,104 @@
+.dropdown_container {
+    position: relative;
+    /* To position the dropdown box */
+    width: 200px;
+}
+
+.tile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    /* Reduced padding */
+    border: 1px solid #e6e7e9;
+    border-radius: 8px;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s ease;
+}
+
+.tile:hover {
+    background-color: #f4f5f8;
+    /* Change background on hover */
+}
+
+.tile_text {
+    font-size: 1em;
+    /* Reduced font size */
+    color: black;
+}
+
+.arrow_icon {
+    font-size: 1em;
+    /* Reduced font size */
+    color: grey;
+}
+
+.dropdown_box {
+    position: absolute;
+    /* Positioning the dropdown */
+    top: 100%;
+    /* Below the tile */
+    left: 0;
+    /* Aligns with the left edge of the tile */
+    width: 100%;
+    /* Matches the width of the tile */
+    background-color: white;
+    border: 1px solid #e6e7e9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    /* Ensures it appears above other elements */
+    padding: 12px;
+    /* Reduced padding */
+    margin-top: 8px;
+    /* Space between tile and dropdown */
+}
+
+.dropdown_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    /* Reduced space between rows */
+}
+
+.label {
+    font-size: 0.9em;
+    margin-right: 10px;
+    /* Reduced font size */
+    color: black;
+}
+
+.dropdown {
+    padding: 6px;
+    /* Reduced padding */
+    border: 1px solid #e6e7e9;
+    border-radius: 4px;
+    width: 48%;
+    /* Adjust dropdown width */
+    font-size: 0.9em;
+    /* Match dropdown font size */
+}
+
+/* Inner Dropdown Styles */
+.inner_dropdown_container {
+    display: flex;
+    justify-content: space-between;
+    /* Aligns inner dropdowns */
+    margin-top: 8px;
+    /* Space above inner dropdowns */
+}
+
+.inner_dropdown {
+    flex: 1;
+    /* Allow both dropdowns to share space equally */
+    padding: 6px;
+    /* Padding for inner dropdowns */
+    border: 1px solid #e6e7e9;
+    border-radius: 4px;
+    font-size: 0.9em;
+    /* Font size for inner dropdowns */
+    background-color: white;
+}

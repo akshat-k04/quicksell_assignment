@@ -1,0 +1,73 @@
+.head_tile {
+    display: flex;
+    /* Use flexbox for layout */
+    justify-content: space-between;
+    /* Aligns left and right sections */
+    align-items: center;
+    /* Vertically centers items */
+    padding: 10px;
+    /* Adds padding around the tile */
+    /* background-color: #f9f9f9; */
+    /* Optional: background color */
+    /* border: 1px solid #ddd; */
+    /* Optional: border for better visibility */
+    /* border-radius: 8px; */
+    /* Rounded corners */
+    margin-bottom: 10px;
+    /* Space between tiles */
+    width: 95%;
+    /* margin-right: 16px !important; */
+}
+
+.head_tile_left {
+    display: flex;
+    /* Use flexbox for left section */
+    align-items: center;
+    /* Vertically center items */
+}
+
+.icon {
+    font-size: 1.5em;
+    /* Adjust icon size */
+    margin-right: 8px;
+    /* Space between icon and name */
+}
+
+.name {
+    font-weight: bold;
+    /* Make the group name bold */
+    margin-right: 4px;
+    /* Space between name and count */
+}
+
+.number {
+    color: #888;
+    /* Optional: a lighter color for the count */
+}
+
+.head_tile_right {
+    display: flex;
+    /* Use flexbox for right section */
+    align-items: center;
+    /* Vertically center items */
+}
+
+.display_icon {
+    height: 24px;
+    /* Increase the size of the icons */
+    width: 24px;
+    /* Maintain aspect ratio */
+    margin-left: 10px;
+    /* Space between icons */
+    margin-right: 10px;
+    /* Space between icons */
+    cursor: pointer;
+    /* Optional: change cursor to pointer */
+    transition: transform 0.2s;
+    /* Add a slight transition for hover effect */
+}
+
+.display_icon:hover {
+    transform: scale(1.1);
+    /* Slightly enlarge icon on hover */
+}

@@ -1,0 +1,27 @@
+.all_list_container {
+    display: flex;
+    overflow-x: auto;
+    /* Enables horizontal scroll */
+    overflow-y: hidden;
+    /* Prevents vertical scroll */
+    white-space: nowrap;
+    /* Prevents wrapping to next line */
+    scroll-snap-type: x mandatory;
+    /* Optional: Snaps to items when scrolling */
+    scrollbar-width: none;
+    /* Hides scrollbar for Firefox */
+}
+
+/* Hide scrollbar for Webkit browsers */
+.all_list_container::-webkit-scrollbar {
+    display: none;
+    /* Hides the scrollbar */
+}
+
+.all_list_container>* {
+    flex: 0 0 30%;
+    /* Each list takes 30% width, showing 4 items at once */
+    scroll-snap-align: start;
+    /* Optional: Ensures snapping alignment */
+    box-sizing: border-box;
+}
