@@ -11,7 +11,7 @@ const groupNameMapping = {
     "Cancelled": "Cancelled",
     "Done": "Done",
     "In progress": "In progress",
-    "todo": "todo"
+    "Todo": "Todo"
 };
 
 export default function HeadTile({ group_name, count }) {
